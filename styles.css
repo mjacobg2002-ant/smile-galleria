@@ -1,0 +1,292 @@
+/* =========================================================
+   SMILE GALLERIA — Family & Cosmetic Dentistry
+   Calm, premium, trustworthy. Teal + warm gold on soft white.
+   Mobile-first · accessible · performance-minded
+   ========================================================= */
+
+:root{
+  --teal-900:#0a353d;
+  --teal-700:#0e5563;
+  --teal:#127d8f;
+  --teal-400:#4fa5b3;
+  --teal-100:#dbecef;
+  --mint-50:#eef6f7;
+  --paper:#f7fbfb;
+  --paper-2:#eef5f5;
+  --gold:#c79a52;
+  --gold-soft:#e7d3ac;
+  --ink:#13272c;
+  --slate:#54666c;
+  --slate-2:#7d8c91;
+  --line:#e2ecec;
+  --line-dark:rgba(255,255,255,.14);
+  --white:#fff;
+
+  --maxw:1200px;
+  --pad:clamp(1.25rem,4vw,2.5rem);
+  --font-serif:"Fraunces",Georgia,"Times New Roman",serif;
+  --font-sans:"Inter",system-ui,-apple-system,sans-serif;
+
+  --r:14px;
+  --r-lg:22px;
+  --r-xl:30px;
+  --shadow:0 24px 60px -34px rgba(14,85,99,.5);
+  --shadow-soft:0 14px 40px -26px rgba(14,85,99,.45);
+  --ease:cubic-bezier(.2,.7,.2,1);
+}
+
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation-duration:.001ms!important;transition-duration:.001ms!important}}
+
+body{
+  margin:0;font-family:var(--font-sans);color:var(--ink);background:var(--paper);
+  line-height:1.65;-webkit-font-smoothing:antialiased;overflow-x:hidden;
+}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+.wrap{width:100%;max-width:var(--maxw);margin-inline:auto;padding-inline:var(--pad)}
+
+.skip-link{position:absolute;left:-999px;top:0;z-index:2000;background:var(--teal-700);color:#fff;padding:.7rem 1.1rem;border-radius:0 0 8px 0;font-weight:600}
+.skip-link:focus{left:0}
+:focus-visible{outline:3px solid var(--teal-400);outline-offset:2px;border-radius:6px}
+
+/* ---------- Buttons ---------- */
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:.5rem;
+  font-family:var(--font-sans);font-weight:600;font-size:1rem;letter-spacing:.01em;
+  padding:.85rem 1.5rem;border-radius:999px;border:2px solid transparent;cursor:pointer;line-height:1;
+  transition:transform .2s var(--ease),box-shadow .2s var(--ease),background .2s,color .2s,border-color .2s;
+}
+.btn-lg{padding:1.02rem 1.9rem;font-size:1.05rem}
+.btn-block{width:100%}
+.btn-primary{background:var(--teal-700);color:#fff;box-shadow:0 12px 26px -12px rgba(14,85,99,.65)}
+.btn-primary:hover{background:var(--teal-900);transform:translateY(-2px);box-shadow:0 18px 36px -14px rgba(14,85,99,.8)}
+.btn-outline{background:transparent;color:var(--teal-700);border-color:var(--teal-100)}
+.btn-outline:hover{border-color:var(--teal-700);background:var(--mint-50)}
+.section-dark .btn-outline{color:#fff;border-color:rgba(255,255,255,.4)}
+.section-dark .btn-outline:hover{border-color:#fff;background:rgba(255,255,255,.08)}
+
+/* ---------- Utility bar ---------- */
+.utility{background:var(--teal-900);color:#cfe6ea;font-size:.85rem}
+.utility-inner{display:flex;justify-content:space-between;align-items:center;gap:1rem;min-height:40px;flex-wrap:wrap}
+.utility-tag{letter-spacing:.02em}
+.utility-right{display:flex;align-items:center;gap:1.2rem}
+.utility-phone{color:#fff;font-weight:600}
+.utility-phone:hover{color:var(--gold-soft)}
+
+/* ---------- Header ---------- */
+.site-header{position:sticky;top:0;z-index:100;background:rgba(247,251,251,.9);backdrop-filter:blur(12px);border-bottom:1px solid var(--line)}
+.header-inner{display:flex;align-items:center;justify-content:space-between;height:78px}
+.brand{display:flex;align-items:center;gap:.7rem}
+.brand-mark svg{display:block}
+.brand-text{display:flex;flex-direction:column;line-height:1.05}
+.brand-name{font-family:var(--font-serif);font-weight:600;font-size:1.4rem;color:var(--teal-900)}
+.brand-sub{font-size:.7rem;letter-spacing:.14em;text-transform:uppercase;color:var(--slate-2);font-weight:600}
+.nav{display:flex;align-items:center;gap:1.7rem}
+.nav a{font-weight:500;color:var(--ink);font-size:1rem;transition:color .2s}
+.nav a:hover{color:var(--teal-700)}
+.nav .nav-cta{color:#fff}
+.nav-toggle{display:none;flex-direction:column;gap:5px;background:none;border:0;cursor:pointer;padding:8px}
+.nav-toggle span{width:26px;height:2px;background:var(--teal-900);border-radius:2px;transition:.3s var(--ease)}
+
+/* ---------- Section scaffolding ---------- */
+.section{padding:clamp(3.5rem,7vw,6.5rem) 0}
+.section-tint{background:var(--paper-2)}
+.section-dark{background:var(--teal-900);color:#eaf4f5}
+.kicker{font-family:var(--font-sans);text-transform:uppercase;letter-spacing:.18em;font-weight:700;font-size:.78rem;color:var(--teal);margin:0 0 .9rem}
+.kicker.gold{color:var(--gold)}
+.kicker.light{color:var(--teal-400)}
+.section-title{font-family:var(--font-serif);font-weight:600;font-size:clamp(1.9rem,4.2vw,3.1rem);line-height:1.08;letter-spacing:-.01em;margin:0 0 1rem;color:var(--teal-900)}
+.section-dark .section-title{color:#fff}
+.section-title em{font-style:italic;color:var(--teal)}
+.section-dark .section-title em{color:var(--teal-400)}
+.lead{font-size:clamp(1.05rem,1.6vw,1.22rem);color:var(--slate);max-width:56ch;margin:0}
+.section-dark .lead{color:rgba(234,244,245,.85)}
+.lead.center{margin-inline:auto}
+.section-head{max-width:56rem}
+.section-head.center{text-align:center;margin-inline:auto}
+.link-arrow{display:inline-block;margin-top:1.4rem;font-weight:600;color:var(--teal-700)}
+.link-arrow:hover{color:var(--teal-900)}
+
+/* ---------- Hero ---------- */
+.hero{background:
+  radial-gradient(120% 90% at 90% -10%,var(--teal-100),transparent 55%),
+  linear-gradient(180deg,var(--mint-50),var(--paper) 70%);
+  padding:clamp(2.5rem,5vw,4.5rem) 0 clamp(3rem,6vw,5rem)}
+.hero-inner{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(2rem,5vw,4rem);align-items:center}
+.eyebrow{display:inline-flex;align-items:center;gap:.55rem;font-weight:600;color:var(--teal-700);letter-spacing:.02em;margin:0 0 1.1rem;font-size:.95rem}
+.eyebrow .dot{width:8px;height:8px;border-radius:50%;background:var(--gold);box-shadow:0 0 0 4px rgba(199,154,82,.18)}
+.hero-title{font-family:var(--font-serif);font-weight:600;font-size:clamp(2.6rem,6vw,4.4rem);line-height:1.03;letter-spacing:-.015em;margin:0 0 1.2rem;color:var(--teal-900)}
+.hero-title em{font-style:italic;color:var(--teal)}
+.hero-sub{font-size:clamp(1.08rem,1.7vw,1.28rem);color:var(--slate);max-width:46ch;margin:0 0 1.9rem}
+.hero-actions{display:flex;gap:.9rem;flex-wrap:wrap;margin-bottom:1.8rem}
+.hero-trust{list-style:none;display:flex;flex-wrap:wrap;gap:.6rem 1.4rem;padding:0;margin:0}
+.hero-trust li{position:relative;padding-left:1.4rem;font-weight:500;color:var(--teal-900);font-size:.98rem}
+.hero-trust li::before{content:"✓";position:absolute;left:0;color:var(--teal);font-weight:800}
+.hero-media{position:relative}
+.hero-photo{border-radius:var(--r-xl);overflow:hidden;box-shadow:var(--shadow);aspect-ratio:5/6;background:var(--teal-100);
+  border:6px solid #fff}
+.hero-photo img{width:100%;height:100%;object-fit:cover;object-position:center 30%}
+.hero-badge{position:absolute;left:-14px;bottom:26px;background:#fff;border-radius:16px;padding:.9rem 1.15rem;box-shadow:var(--shadow-soft);border:1px solid var(--line);display:flex;flex-direction:column;line-height:1.2}
+.hero-badge strong{color:var(--teal-900);font-family:var(--font-serif);font-size:1.05rem}
+.hero-badge span{color:var(--slate);font-size:.85rem}
+
+/* ---------- Trust strip ---------- */
+.trust{background:var(--teal-700);color:#fff}
+.trust-grid{display:grid;grid-template-columns:repeat(4,1fr)}
+.trust-item{padding:1.7rem var(--pad);display:flex;flex-direction:column;gap:.15rem;border-left:1px solid rgba(255,255,255,.14)}
+.trust-item:first-child{border-left:0}
+.trust-item strong{font-family:var(--font-serif);font-size:1.35rem;font-weight:600}
+.trust-item span{color:rgba(255,255,255,.78);font-size:.92rem}
+
+/* ---------- Welcome ---------- */
+.welcome-inner{display:grid;grid-template-columns:1fr 1.05fr;gap:clamp(2rem,5vw,4rem);align-items:center}
+.welcome-media{border-radius:var(--r-xl);overflow:hidden;box-shadow:var(--shadow);border:6px solid #fff}
+.welcome-media img{width:100%;height:100%;object-fit:cover;aspect-ratio:3/2}
+.pull{font-family:var(--font-serif);font-style:italic;font-size:clamp(1.15rem,2vw,1.5rem);color:var(--teal-900);border-left:3px solid var(--gold);padding-left:1.1rem;margin:1.5rem 0 0;line-height:1.4}
+
+/* ---------- Services ---------- */
+.service-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.4rem;margin-top:3rem}
+.service-card{background:#fff;border:1px solid var(--line);border-radius:var(--r-lg);padding:2rem 1.7rem;box-shadow:var(--shadow-soft);transition:transform .3s var(--ease),box-shadow .3s var(--ease),border-color .3s}
+.service-card:hover{transform:translateY(-5px);box-shadow:var(--shadow);border-color:var(--teal-100)}
+.service-card.featured{background:linear-gradient(180deg,#fff,var(--mint-50));border-color:var(--gold-soft)}
+.svc-ico{display:inline-flex;align-items:center;justify-content:center;width:52px;height:52px;border-radius:14px;background:var(--mint-50);font-size:1.5rem;margin-bottom:1rem}
+.service-card.featured .svc-ico{background:#fbf3e2}
+.service-card h3{font-family:var(--font-serif);font-weight:600;font-size:1.4rem;margin:0 0 .35rem;color:var(--teal-900)}
+.service-card > p{margin:0 0 1rem;color:var(--slate)}
+.service-card ul{list-style:none;padding:0;margin:0;border-top:1px solid var(--line);padding-top:.9rem}
+.service-card li{position:relative;padding-left:1.3rem;margin:.4rem 0;color:var(--ink);font-size:.97rem}
+.service-card li::before{content:"";position:absolute;left:0;top:.55em;width:7px;height:7px;border-radius:50%;background:var(--teal-400)}
+
+/* ---------- Cosmetic ---------- */
+.cosmetic-inner{display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(2rem,5vw,4rem);align-items:center}
+.cosmetic-list{display:flex;flex-direction:column;gap:1rem;margin:1.8rem 0}
+.cosmetic-list > div{display:flex;flex-direction:column;padding-left:1.1rem;border-left:2px solid var(--gold-soft)}
+.cosmetic-list strong{color:var(--teal-900);font-size:1.05rem}
+.cosmetic-list span{color:var(--slate);font-size:.97rem}
+.cosmetic-media{position:relative;border-radius:var(--r-xl);overflow:hidden;box-shadow:var(--shadow);border:6px solid #fff}
+.cosmetic-media img{width:100%;height:100%;object-fit:cover;object-position:center 25%;aspect-ratio:4/5}
+.cosmetic-media::after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 60%,rgba(199,154,82,.14))}
+
+/* ---------- Comfort ---------- */
+.comfort-inner{display:grid;grid-template-columns:1fr 1fr;gap:clamp(2rem,5vw,4rem);align-items:center}
+.comfort-media{border-radius:var(--r-xl);overflow:hidden;box-shadow:var(--shadow);border:6px solid rgba(255,255,255,.1)}
+.comfort-media img{width:100%;height:100%;object-fit:cover;aspect-ratio:4/3}
+.comfort-points{list-style:none;padding:0;margin:1.6rem 0 0;display:grid;gap:1rem}
+.comfort-points li{display:flex;flex-direction:column;padding-left:1.5rem;position:relative}
+.comfort-points li::before{content:"✓";position:absolute;left:0;top:.05em;color:var(--teal-400);font-weight:800}
+.comfort-points strong{color:#fff}
+.comfort-points span{color:rgba(234,244,245,.72);font-size:.96rem}
+
+/* ---------- About / Dr. Kim ---------- */
+.about-inner{display:grid;grid-template-columns:.85fr 1.15fr;gap:clamp(2rem,5vw,4rem);align-items:center}
+.about-portrait{display:flex;flex-direction:column;gap:1.2rem}
+.portrait-ph{position:relative;aspect-ratio:4/5;border-radius:var(--r-xl);background:
+  radial-gradient(120% 100% at 50% 0%,var(--teal-100),transparent 60%),linear-gradient(160deg,var(--teal-700),var(--teal-900));
+  display:flex;flex-direction:column;align-items:center;justify-content:center;gap:.6rem;box-shadow:var(--shadow);border:6px solid #fff}
+.monogram{font-family:var(--font-serif);font-weight:600;font-size:clamp(3.5rem,8vw,5.5rem);color:#fff;letter-spacing:.05em}
+.portrait-note{font-size:.78rem;letter-spacing:.08em;text-transform:uppercase;color:rgba(255,255,255,.7);border:1px dashed rgba(255,255,255,.4);padding:.3rem .7rem;border-radius:8px}
+.about-credentials{display:grid;grid-template-columns:repeat(3,1fr);gap:.7rem}
+.about-credentials > div{background:var(--mint-50);border:1px solid var(--line);border-radius:12px;padding:.8rem .6rem;text-align:center}
+.about-credentials strong{display:block;font-family:var(--font-serif);color:var(--teal-900);font-size:1.05rem}
+.about-credentials span{font-size:.74rem;color:var(--slate);line-height:1.25;display:block;margin-top:.15rem}
+.about-copy .dds{font-size:.55em;letter-spacing:.15em;color:var(--teal);vertical-align:middle;font-family:var(--font-sans);font-weight:700}
+.about-copy p{color:var(--slate)}
+.about-copy .lead{margin-bottom:1rem}
+.about-copy .btn{margin-top:1.4rem}
+
+/* ---------- Reviews ---------- */
+.stars-lead{color:var(--gold);font-size:1.3rem;letter-spacing:.15em;margin-top:.4rem}
+.review-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.4rem;margin-top:3rem}
+.review-card{background:#fff;border:1px solid var(--line);border-radius:var(--r-lg);padding:1.8rem;box-shadow:var(--shadow-soft);margin:0;display:flex;flex-direction:column}
+.review-card .stars{color:var(--gold);letter-spacing:.12em;margin-bottom:.7rem}
+.review-card blockquote{margin:0;font-family:var(--font-serif);font-size:1.12rem;line-height:1.5;color:var(--teal-900)}
+.review-card figcaption{margin-top:1rem;font-weight:600;color:var(--slate)}
+.cta-card{align-items:flex-start;justify-content:center;gap:1rem;background:linear-gradient(160deg,var(--teal-700),var(--teal-900));color:#fff;border:0}
+.cta-card p{margin:0;font-family:var(--font-serif);font-size:1.2rem}
+
+/* ---------- New patients ---------- */
+.np-inner{display:grid;grid-template-columns:.9fr 1.1fr;gap:clamp(2rem,5vw,4rem);align-items:center}
+.np-steps{list-style:none;padding:0;margin:0;display:grid;gap:1.2rem}
+.np-steps li{display:flex;gap:1.1rem;align-items:flex-start;background:#fff;border:1px solid var(--line);border-radius:var(--r);padding:1.2rem 1.4rem;box-shadow:var(--shadow-soft)}
+.np-num{flex:none;width:40px;height:40px;border-radius:50%;background:var(--teal-700);color:#fff;font-family:var(--font-serif);font-weight:600;display:flex;align-items:center;justify-content:center;font-size:1.15rem}
+.np-steps strong{color:var(--teal-900)}
+.np-steps p{margin:.15rem 0 0;color:var(--slate);font-size:.97rem}
+
+/* ---------- Book / form ---------- */
+.book-inner{display:grid;grid-template-columns:1fr 1fr;gap:clamp(2rem,5vw,4rem);align-items:start}
+.book-copy .lead a{color:#fff;text-decoration:underline;text-decoration-color:rgba(255,255,255,.4)}
+.contact-details{margin:1.8rem 0 0;display:grid;gap:1.1rem}
+.contact-details > div{display:grid;grid-template-columns:90px 1fr;gap:1rem;padding-top:1.1rem;border-top:1px solid rgba(255,255,255,.14)}
+.contact-details dt{font-weight:700;color:var(--teal-400);text-transform:uppercase;letter-spacing:.06em;font-size:.82rem}
+.contact-details dd{margin:0;color:#eaf4f5}
+.contact-details a{color:#fff}
+.book-form{background:#fff;border-radius:var(--r-xl);padding:clamp(1.6rem,3vw,2.4rem);box-shadow:0 40px 80px -44px rgba(0,0,0,.55);color:var(--ink)}
+.form-title{font-family:var(--font-serif);font-weight:600;font-size:1.6rem;margin:0 0 1.3rem;color:var(--teal-900)}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:1rem}
+.field{margin-bottom:1.05rem}
+.field label{display:block;font-weight:600;font-size:.92rem;margin-bottom:.4rem;color:var(--ink)}
+.optional{color:var(--slate-2);font-weight:400}
+.field input,.field select,.field textarea{width:100%;padding:.8rem .95rem;border:1.5px solid var(--line);border-radius:12px;font-family:var(--font-sans);font-size:1rem;color:var(--ink);background:var(--paper);transition:border-color .2s,box-shadow .2s}
+.field input:focus,.field select:focus,.field textarea:focus{outline:none;border-color:var(--teal);box-shadow:0 0 0 3px rgba(18,125,143,.14)}
+.field textarea{resize:vertical}
+.form-note{margin:1rem 0 0;font-weight:600;min-height:1.2em}
+.form-note.ok{color:#12795a}
+.form-note.err{color:#c0392b}
+.form-fine{margin:.7rem 0 0;font-size:.82rem;color:var(--slate-2)}
+
+/* ---------- Location / map ---------- */
+.location-head{max-width:56rem;margin-bottom:2rem}
+.map-wrap{position:relative;height:clamp(320px,42vw,460px);border-top:1px solid var(--line)}
+.map-wrap iframe{position:absolute;inset:0;width:100%;height:100%;border:0;filter:grayscale(.15) contrast(1.03)}
+
+/* ---------- Footer ---------- */
+.site-footer{background:var(--teal-900);color:#cfe0e3;padding-top:clamp(3rem,6vw,4.5rem)}
+.footer-inner{display:grid;grid-template-columns:1.3fr 1fr 1.2fr;gap:2.5rem;padding-bottom:2.5rem;border-bottom:1px solid rgba(255,255,255,.12)}
+.footer-name{font-family:var(--font-serif);font-size:1.5rem;color:#fff;margin:.8rem 0 .2rem}
+.footer-tag{color:rgba(255,255,255,.6);margin:0 0 1rem;font-size:.95rem}
+.footer-social{display:flex;gap:1rem}
+.footer-social a{color:#fff;font-weight:600;border-bottom:1px solid rgba(255,255,255,.3)}
+.footer-social a:hover{color:var(--gold-soft)}
+.footer-nav{display:flex;flex-direction:column;gap:.7rem}
+.footer-nav a{color:rgba(255,255,255,.82)}
+.footer-nav a:hover{color:#fff}
+.footer-contact{display:grid;gap:1rem;font-size:.95rem}
+.footer-contact strong{color:var(--teal-400);font-size:.8rem;text-transform:uppercase;letter-spacing:.06em}
+.footer-contact a{color:#fff}
+.footer-bottom{display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap;padding-block:1.5rem;color:rgba(255,255,255,.5);font-size:.85rem}
+.footer-bottom p{margin:0}
+
+/* ---------- Sticky mobile CTA ---------- */
+.sticky-cta{display:none;position:fixed;left:1rem;right:1rem;bottom:1rem;z-index:90;background:var(--teal-700);color:#fff;text-align:center;padding:1rem;border-radius:999px;font-weight:600;font-size:1.1rem;box-shadow:0 16px 40px -12px rgba(14,85,99,.8)}
+
+/* =========================================================
+   RESPONSIVE
+   ========================================================= */
+@media (max-width:980px){
+  .service-grid,.review-grid{grid-template-columns:repeat(2,1fr)}
+  .trust-grid{grid-template-columns:repeat(2,1fr)}
+  .trust-item:nth-child(-n+2){border-bottom:1px solid rgba(255,255,255,.14)}
+  .trust-item:nth-child(odd){border-left:0}
+  .hero-inner,.welcome-inner,.cosmetic-inner,.comfort-inner,.about-inner,.np-inner,.book-inner{grid-template-columns:1fr}
+  .welcome-media,.comfort-media{order:-1}
+  .about-portrait{max-width:420px}
+}
+@media (max-width:680px){
+  .nav{position:fixed;inset:118px 0 auto 0;flex-direction:column;align-items:stretch;gap:0;background:rgba(247,251,251,.98);backdrop-filter:blur(14px);border-bottom:1px solid var(--line);padding:.5rem var(--pad) 1.4rem;transform:translateY(-140%);transition:transform .35s var(--ease);max-height:calc(100vh - 118px);overflow-y:auto}
+  .nav.open{transform:translateY(0)}
+  .nav a{padding:1rem 0;border-bottom:1px solid var(--line);font-size:1.15rem}
+  .nav .nav-cta{margin-top:1rem;border-bottom:0;justify-content:center}
+  .nav-toggle{display:flex}
+  .nav-toggle[aria-expanded="true"] span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+  .nav-toggle[aria-expanded="true"] span:nth-child(2){opacity:0}
+  .nav-toggle[aria-expanded="true"] span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+  .service-grid,.review-grid{grid-template-columns:1fr}
+  .two{grid-template-columns:1fr}
+  .utility-tag{display:none}
+  .utility-inner{justify-content:center}
+  .contact-details > div{grid-template-columns:1fr;gap:.15rem}
+  .footer-bottom{flex-direction:column;gap:.3rem}
+  .sticky-cta{display:block}
+}
