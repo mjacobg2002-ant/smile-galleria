@@ -29,16 +29,19 @@ where possible:
 - **Reviews:** real, attributed patient quotes (Kimberly B., Rhonda F., Carrie & family, Pete L., Stuart L.)
 - **Social:** Facebook (/smilegalleria), Yelp (/biz/smile-galleria-mclean)
 
+## Photos — the practice's own images
+The site uses **Smile Galleria's real photography and logo**, sourced from tysonssmilegalleria.com:
+Dr. Kim's portrait, the real logo, the reception/waiting area, treatment room, digital X-ray, the
+interior sign, and the practice's smile imagery. A few originals are low-resolution (they came from the
+old site) — if you have higher-res versions, drop them in over the same filenames in `assets/` and no
+code changes are needed.
+
 ## To finish before launch
-- **Photos** — the site ships with professional stock dentistry photography (Unsplash, free license,
-  no other-business branding) chosen to match each section. Swap for real Smile Galleria photos when
-  available; keep the same filenames and no code changes are needed.
-- **Dr. Kim's headshot** — the About section uses a clean "WK" monogram placeholder. Drop in his real
-  photo (replace `.portrait-ph` with an `<img>`).
 - **Appointment form** — `#bookForm` in `script.js` validates and confirms only; connect it to your
   provider (Formspree / practice CRM / email) to receive submissions.
 - **Verify hours** — third-party listings show Mon–Fri 9–5; the site also advertises Saturday & evening
   appointments. Confirm current hours.
+- **Higher-res photos** — optional, for the Dr. Kim portrait and office shots.
 
 ## Brand
 - Palette: soft teal (`--teal-700 #0e5563`) + warm gold accent (`--gold #c79a52`) on near-white.
