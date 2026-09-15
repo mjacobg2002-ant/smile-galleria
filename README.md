@@ -47,13 +47,11 @@ All copy uses only facts verifiable from tysonssmilegalleria.com:
   *(No star ratings, review counts, dates, or platform badges are fabricated.)*
 - **Schema:** Dentist/LocalBusiness JSON-LD with only verified fields — no `openingHours`, no ratings.
 
-## Photos — the practice's own images
-Every image is first-party, downloaded from tysonssmilegalleria.com (nothing is hotlinked). See the
-**asset manifest** in `ASSETS.md` for source URLs, dimensions, and where each is used.
-
-The Dr. Kim portrait is only available at 188×179 on the source site, so it is shown at a controlled
-small size (framed, not upscaled to full-bleed). If a higher-resolution portrait is provided, drop it in
-over `assets/dr-wilson-kim-portrait.jpg`.
+## Photos
+Images are stored locally (nothing is hotlinked). The current set is a batch of enhanced,
+high-resolution versions derived from the practice's first-party imagery on tysonssmilegalleria.com.
+See the **asset manifest** in `ASSETS.md` for what each is derived from, dimensions, and where it's used.
+Confirm with the client that these enhanced images are approved before public launch.
 
 ## Concept badge
 `script.js` has a `SHOW_CONCEPT_BADGE` flag (default `true`) that shows the floating
@@ -64,4 +62,4 @@ over `assets/dr-wilson-kim-portrait.jpg`.
   sends nothing. Connect it to a secure booking provider / CRM to receive submissions.
 - **Office hours** — confirm current weekly hours (intentionally omitted here).
 - **Social links** — none are included; add verified profile URLs if desired.
-- **Higher-res Dr. Kim portrait** — optional but recommended.
+- **Enhanced photography** — the high-res image set is enhanced/upscaled; confirm approval for use.
