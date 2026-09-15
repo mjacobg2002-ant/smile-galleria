@@ -4,36 +4,43 @@
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-<title>Smile Galleria | Family &amp; Cosmetic Dentistry in Tysons Corner, McLean VA</title>
-<meta name="description" content="Smile Galleria is a family & cosmetic dentistry practice at Tysons Corner in McLean, VA. Gentle, personalized care from Dr. Wilson Kim, DDS — cleanings, implants, veneers, Invisalign and more. Most insurances accepted." />
+<title>Smile Galleria | Family Dentist in Tysons Corner &amp; McLean, VA</title>
+<meta name="description" content="Visit Wilson J. Kim, DDS, for family, cosmetic and orthodontic dental care in Tysons Corner. Kids are welcome, with Saturday and evening appointments available." />
 <link rel="canonical" href="https://tysonssmilegalleria.com/" />
 
 <meta property="og:type" content="website" />
-<meta property="og:title" content="Smile Galleria | Family & Cosmetic Dentistry in Tysons Corner" />
-<meta property="og:description" content="What does your smile say about you? Gentle family & cosmetic dentistry from Dr. Wilson Kim in McLean, VA." />
-<meta property="og:image" content="assets/office-4.jpg" />
+<meta property="og:title" content="Smile Galleria | Family &amp; Cosmetic Dentistry in Tysons Corner" />
+<meta property="og:description" content="Personalized family, cosmetic and orthodontic dentistry from Wilson J. Kim, DDS, in McLean, VA. Kids welcome. Saturday and evening appointments available." />
+<meta property="og:image" content="assets/office-interior-sign.jpg" />
 <meta property="og:url" content="https://tysonssmilegalleria.com/" />
 <meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Smile Galleria | Family &amp; Cosmetic Dentistry in Tysons Corner" />
+<meta name="twitter:description" content="Personalized family, cosmetic and orthodontic dentistry from Wilson J. Kim, DDS, in McLean, VA." />
+<meta name="twitter:image" content="assets/office-interior-sign.jpg" />
 
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230e5563'/%3E%3Cpath d='M8 15c2.5 5 13.5 5 16 0' stroke='white' stroke-width='2.6' fill='none' stroke-linecap='round'/%3E%3C/svg%3E" />
 
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+<link rel="preload" as="image" href="assets/smile-hero.jpg" />
 
 <link rel="stylesheet" href="styles.css" />
 
+<!-- LocalBusiness / Dentist schema — only verified facts. No hours or ratings are asserted. -->
 <script type="application/ld+json">
 {
   "@context": "https://schema.org",
   "@type": "Dentist",
   "name": "Smile Galleria — Family & Cosmetic Dentistry at Tysons Corner",
-  "description": "Family and cosmetic dentistry practice of Wilson J. Kim, DDS, in McLean, VA. Preventative, general, cosmetic and orthodontic care.",
-  "image": "https://tysonssmilegalleria.com/assets/office-4.jpg",
+  "description": "Family, cosmetic and orthodontic dentistry practice of Wilson J. Kim, DDS, in McLean, VA. Preventive, general, cosmetic and orthodontic care for children, teens, adults and seniors.",
+  "image": "https://tysonssmilegalleria.com/assets/office-interior-sign.jpg",
   "url": "https://tysonssmilegalleria.com/",
   "telephone": "+1-703-992-7272",
+  "faxNumber": "+1-703-992-7284",
   "email": "DrKim@TysonsSmileGalleria.com",
   "priceRange": "$$",
+  "availableLanguage": ["English", "Korean"],
   "address": {
     "@type": "PostalAddress",
     "streetAddress": "8251 Greensboro Drive, Suite 120",
@@ -43,11 +50,16 @@
     "addressCountry": "US"
   },
   "areaServed": ["McLean VA", "Tysons VA", "Vienna VA", "Falls Church VA", "Great Falls VA"],
-  "openingHoursSpecification": [
-    { "@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "09:00", "closes": "17:00" }
-  ],
   "founder": { "@type": "Dentist", "name": "Wilson J. Kim, DDS" },
-  "medicalSpecialty": ["Cosmetic Dentistry", "General Dentistry", "Orthodontics"]
+  "medicalSpecialty": ["Cosmetic Dentistry", "General Dentistry", "Orthodontics", "Pediatric Dentistry"],
+  "makesOffer": [
+    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Preventive Care" } },
+    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "General & Restorative Dentistry" } },
+    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Family & Pediatric Dentistry" } },
+    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Dental Implants" } },
+    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Cosmetic Dentistry" } },
+    { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Orthodontics & Invisalign" } }
+  ]
 }
 </script>
 </head>
@@ -58,9 +70,11 @@
 <!-- ===================== UTILITY BAR ===================== -->
 <div class="utility">
   <div class="wrap utility-inner">
-    <span class="utility-tag">Family &amp; Cosmetic Dentistry · Tysons Corner, McLean VA</span>
+    <span class="utility-tag">Tysons Corner · McLean, VA</span>
     <span class="utility-right">
-      <span>Most insurances accepted</span>
+      <span class="u-hide-sm">Saturday &amp; evening appointments</span>
+      <span class="u-hide-sm u-dot">·</span>
+      <span>Most insurance plans accepted</span>
       <a href="tel:+17039927272" class="utility-phone">(703) 992-7272</a>
     </span>
   </div>
@@ -70,16 +84,17 @@
 <header class="site-header" id="siteHeader">
   <div class="wrap header-inner">
     <a href="#top" class="brand" aria-label="Smile Galleria — home">
-      <img src="assets/logo.png" alt="Smile Galleria — Family &amp; Cosmetic Dentistry" class="brand-logo" width="184" height="149" />
+      <img src="assets/smile-galleria-logo.png" alt="Smile Galleria — Family &amp; Cosmetic Dentistry at Tysons Corner" class="brand-logo" width="184" height="149" />
     </a>
 
     <nav class="nav" id="primaryNav" aria-label="Primary">
       <a href="#services">Services</a>
       <a href="#cosmetic">Cosmetic</a>
-      <a href="#about">About</a>
+      <a href="#ortho">Orthodontics</a>
+      <a href="#about">About Dr. Kim</a>
       <a href="#reviews">Reviews</a>
       <a href="#contact">Contact</a>
-      <a href="#book" class="btn btn-primary nav-cta">Book Appointment</a>
+      <a href="#book" class="btn btn-primary nav-cta">Request Appointment</a>
     </nav>
 
     <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="primaryNav" aria-label="Open menu">
@@ -95,22 +110,23 @@
 <section class="hero" aria-label="Introduction">
   <div class="wrap hero-inner">
     <div class="hero-copy">
-      <p class="eyebrow"><span class="dot"></span>Tysons Corner · McLean, Virginia</p>
-      <h1 class="hero-title">What does your <em>smile</em> say about you?</h1>
-      <p class="hero-sub">Gentle, personalized family &amp; cosmetic dentistry from Dr. Wilson Kim — where complete oral health is the goal and your comfort always comes first.</p>
+      <p class="eyebrow"><span class="dot"></span>Family &amp; Cosmetic Dentistry in Tysons Corner</p>
+      <h1 class="hero-title">Confident smiles start with <em>comfortable</em> care</h1>
+      <p class="hero-sub">Personalized dental care for children, teens, adults, and seniors — led by Wilson J. Kim, DDS, in McLean, Virginia.</p>
       <div class="hero-actions">
         <a href="#book" class="btn btn-primary btn-lg">Request an Appointment</a>
         <a href="tel:+17039927272" class="btn btn-outline btn-lg">Call (703) 992-7272</a>
       </div>
       <ul class="hero-trust">
-        <li>Practicing since 2000</li>
-        <li>Columbia University, DDS</li>
-        <li>Most insurances accepted</li>
+        <li>Kids welcome</li>
+        <li>Saturday &amp; evening appointments</li>
+        <li>Most insurance plans accepted</li>
+        <li>English &amp; Korean spoken</li>
       </ul>
     </div>
     <div class="hero-media">
       <div class="hero-photo">
-        <img src="assets/hero-smile.png" alt="A patient with a bright, confident smile at Smile Galleria" width="720" height="820" fetchpriority="high" />
+        <img src="assets/smile-hero.jpg" alt="A smiling patient welcomed at Smile Galleria in Tysons Corner" width="600" height="400" fetchpriority="high" />
       </div>
       <div class="hero-badge">
         <strong>Saturday &amp; evening</strong>
@@ -121,26 +137,38 @@
 </section>
 
 <!-- ===================== TRUST STRIP ===================== -->
-<section class="trust" aria-label="Why patients choose us">
+<section class="trust" aria-label="Why families choose Smile Galleria">
   <div class="wrap trust-grid">
-    <div class="trust-item"><strong>Since 2000</strong><span>Trusted, experienced care</span></div>
-    <div class="trust-item"><strong>Columbia DDS</strong><span>Dr. Wilson Kim, U.S. Air Force veteran</span></div>
-    <div class="trust-item"><strong>All ages</strong><span>Care for every member of your family</span></div>
-    <div class="trust-item"><strong>English &amp; Korean</strong><span>Spoken in our office</span></div>
+    <div class="trust-item">
+      <svg class="trust-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 21s-7-4.35-9.33-9.06C1.1 8.9 2.6 5.5 6 5.5c2 0 3.2 1.2 4 2.4.8-1.2 2-2.4 4-2.4 3.4 0 4.9 3.4 3.33 6.44C19 16.65 12 21 12 21z"/></svg>
+      <strong>Kids welcome</strong><span>Gentle, family-friendly visits</span>
+    </div>
+    <div class="trust-item">
+      <svg class="trust-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 100 20 10 10 0 000-20zm0 4a1 1 0 011 1v5l3.5 2.1a1 1 0 01-1 1.72l-4-2.4A1 1 0 0111 12V7a1 1 0 011-1z"/></svg>
+      <strong>Saturday &amp; evening</strong><span>Appointments to fit your week</span>
+    </div>
+    <div class="trust-item">
+      <svg class="trust-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2l7 3v6c0 4.4-3 8.3-7 9-4-0.7-7-4.6-7-9V5l7-3zm-1 12l5-5-1.4-1.4L11 11.2 9.4 9.6 8 11l3 3z"/></svg>
+      <strong>Most insurance accepted</strong><span>We help you make the most of it</span>
+    </div>
+    <div class="trust-item">
+      <svg class="trust-ico" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a10 10 0 100 20 10 10 0 000-20zm6.9 9h-3a15.6 15.6 0 00-1.2-5.2A8 8 0 0118.9 11zM12 4c.9 1.2 1.6 3 1.8 5h-3.6C10.4 7 11.1 5.2 12 4zM4.3 13h3c.2 1.9.6 3.7 1.2 5.2A8 8 0 014.3 13zm3-2h-3a8 8 0 014.2-5.2A15.6 15.6 0 007.3 11zM12 20c-.9-1.2-1.6-3-1.8-5h3.6c-.2 2-.9 3.8-1.8 5zm2.7-1.8c.6-1.5 1-3.3 1.2-5.2h3a8 8 0 01-4.2 5.2z"/></svg>
+      <strong>English &amp; Korean</strong><span>Care in the language you prefer</span>
+    </div>
   </div>
 </section>
 
-<!-- ===================== WELCOME / ABOUT ===================== -->
+<!-- ===================== WELCOME / POSITIONING ===================== -->
 <section class="section welcome" id="welcome">
   <div class="wrap welcome-inner">
     <div class="welcome-media">
-      <img src="assets/waiting-room.jpg" alt="The welcoming Smile Galleria reception and waiting area in McLean, VA" loading="lazy" width="1200" height="800" />
+      <img src="assets/waiting-room.jpg" alt="The welcoming Smile Galleria reception and waiting area in McLean, VA" loading="lazy" width="850" height="550" />
     </div>
     <div class="welcome-copy">
       <p class="kicker">Welcome to Smile Galleria</p>
-      <h2 class="section-title">Dentistry that starts with <em>you.</em></h2>
-      <p class="lead">We provide dental care for each member of your family. Good dental health starts with patient education and preventative care — and every visit is built around keeping you comfortable and informed.</p>
-      <p class="pull">“Complete oral health is our long-term goal, but our immediate priority is patient comfort.”</p>
+      <h2 class="section-title">Dental care for <em>every stage</em> of life.</h2>
+      <p class="lead">Lasting oral health begins with education, prevention, and care that makes patients feel comfortable. Dr. Kim and his team welcome young children, teenagers, adults, and seniors with treatment designed around each patient's needs.</p>
+      <p class="pull">“Complete oral health is our long-term goal — but your comfort is our immediate priority.”</p>
       <a href="#about" class="link-arrow">Meet Dr. Kim →</a>
     </div>
   </div>
@@ -156,66 +184,90 @@
     </div>
     <div class="service-grid">
       <article class="service-card">
-        <span class="svc-ico" aria-hidden="true">🪥</span>
-        <h3>Preventative</h3>
+        <span class="svc-ico" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M12 3c3 0 5 2 5 5 0 2-1 4-1 7 0 3-1 5-2 5s-1-3-2-3-1 3-2 3-2-2-2-5c0-3-1-5-1-7 0-3 2-5 5-5z"/></svg>
+        </span>
+        <h3>Preventive Care</h3>
         <p>Keeping your smile healthy for the long run.</p>
         <ul>
-          <li>Teeth cleanings</li>
+          <li>Cleanings &amp; exams</li>
           <li>Periodontal therapy</li>
           <li>Dental sealants</li>
           <li>Custom mouthguards</li>
         </ul>
+        <a class="svc-link" href="https://tysonssmilegalleria.com/general-dentistry.html" target="_blank" rel="noopener">General dentistry →</a>
       </article>
+
       <article class="service-card">
-        <span class="svc-ico" aria-hidden="true">🦷</span>
+        <span class="svc-ico" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M12 3c3 0 5 2 5 5 0 2-1 4-1 7 0 3-1 5-2 5s-1-3-2-3-1 3-2 3-2-2-2-5c0-3-1-5-1-7 0-3 2-5 5-5z"/></svg>
+        </span>
         <h3>General &amp; Restorative</h3>
         <p>Comfortable treatment that restores function.</p>
         <ul>
-          <li>Fillings</li>
+          <li>Tooth-colored fillings</li>
           <li>Crowns &amp; bridges</li>
-          <li>Dental implants</li>
-          <li>Root canals &amp; extractions</li>
+          <li>Root canal treatment</li>
+          <li>Extractions</li>
         </ul>
+        <a class="svc-link" href="https://tysonssmilegalleria.com/general-dentistry.html" target="_blank" rel="noopener">Learn more →</a>
       </article>
+
+      <article class="service-card">
+        <span class="svc-ico" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M8.5 11a3 3 0 100-6 3 3 0 000 6zm7 1a2.5 2.5 0 100-5 2.5 2.5 0 000 5zM8.5 12.5c-3 0-6 1.5-6 4V19h9v-2.5c0-1 .4-1.9 1-2.6-1.2-.9-2.7-1.4-4-1.4zm7 .5c-.6 0-1.2.1-1.8.3.8.8 1.3 1.8 1.3 3V19h6v-2c0-2.2-2.5-4-5.5-4z"/></svg>
+        </span>
+        <h3>Family &amp; Pediatric</h3>
+        <p>Friendly, patient visits for little ones.</p>
+        <ul>
+          <li>Dental care for children</li>
+          <li>Preventive education</li>
+          <li>Development monitoring</li>
+          <li>Family appointments</li>
+        </ul>
+        <a class="svc-link" href="#comfort">Our family approach →</a>
+      </article>
+
+      <article class="service-card">
+        <span class="svc-ico" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M12 2a5 5 0 015 5c0 2-1 3.5-1 6 0 3.5-1.5 9-4 9s-4-5.5-4-9c0-2.5-1-4-1-6a5 5 0 015-5zm0 3.2L10.6 6.6 12 8l1.4-1.4L12 5.2z"/></svg>
+        </span>
+        <h3>Dental Implants</h3>
+        <p>Replace missing teeth and restore your bite.</p>
+        <ul>
+          <li>Tooth replacement</li>
+          <li>Implant restoration</li>
+          <li>Personalized consultation</li>
+        </ul>
+        <a class="svc-link" href="#book">Ask about implants →</a>
+      </article>
+
       <article class="service-card featured">
-        <span class="svc-ico" aria-hidden="true">✨</span>
-        <h3>Cosmetic</h3>
+        <span class="svc-ico" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M12 2l2 5 5 2-5 2-2 5-2-5-5-2 5-2 2-5zm7 10l1 2.5L22 15l-2 .5L19 18l-1-2.5L16 15l2-.5 1-2.5z"/></svg>
+        </span>
+        <h3>Cosmetic Dentistry</h3>
         <p>Love the way your smile looks.</p>
         <ul>
           <li>Porcelain veneers</li>
-          <li>Teeth whitening</li>
-          <li>Smile makeovers</li>
+          <li>Professional whitening</li>
+          <li>Smile-focused planning</li>
         </ul>
+        <a class="svc-link" href="https://tysonssmilegalleria.com/cosmetic-dentistry.html" target="_blank" rel="noopener">Explore cosmetic →</a>
       </article>
+
       <article class="service-card">
-        <span class="svc-ico" aria-hidden="true">〰️</span>
+        <span class="svc-ico" aria-hidden="true">
+          <svg viewBox="0 0 24 24"><path d="M3 8h18v3H3V8zm2 5h2v3H5v-3zm3 0h2v3H8v-3zm3 0h2v3h-2v-3zm3 0h2v3h-2v-3zm3 0h2v3h-2v-3z"/></svg>
+        </span>
         <h3>Orthodontics</h3>
         <p>Straighter teeth, discreetly.</p>
         <ul>
           <li>Invisalign clear aligners</li>
-          <li>Braces</li>
-          <li>Bite alignment</li>
+          <li>Traditional braces</li>
+          <li>Ceramic braces</li>
         </ul>
-      </article>
-      <article class="service-card">
-        <span class="svc-ico" aria-hidden="true">👶</span>
-        <h3>Pediatric Care</h3>
-        <p>Friendly, patient visits for little ones.</p>
-        <ul>
-          <li>Children's cleanings &amp; exams</li>
-          <li>Gentle, kid-first approach</li>
-          <li>Healthy-habit coaching</li>
-        </ul>
-      </article>
-      <article class="service-card">
-        <span class="svc-ico" aria-hidden="true">🛡️</span>
-        <h3>Emergencies</h3>
-        <p>Cracked or aching tooth? We're here.</p>
-        <ul>
-          <li>Toothache relief</li>
-          <li>Cracked &amp; chipped teeth</li>
-          <li>Same-week care when possible</li>
-        </ul>
+        <a class="svc-link" href="#ortho">See orthodontics →</a>
       </article>
     </div>
   </div>
@@ -227,37 +279,60 @@
     <div class="cosmetic-copy">
       <p class="kicker gold">Cosmetic Dentistry</p>
       <h2 class="section-title">Love the way you <em>smile.</em></h2>
-      <p class="lead">Whether it's whitening for a big day, porcelain veneers, or a full smile makeover, Dr. Kim designs cosmetic results that look natural and feel like you — only more confident.</p>
+      <p class="lead">Whether it's whitening for a big day, porcelain veneers, or a full smile makeover, Dr. Kim plans cosmetic results that look natural and feel like you — only more confident.</p>
       <div class="cosmetic-list">
-        <div><strong>Porcelain Veneers</strong><span>Reshape, brighten, and perfect in a few visits.</span></div>
-        <div><strong>Teeth Whitening</strong><span>Professional-grade, safe, and dramatic.</span></div>
-        <div><strong>Invisalign</strong><span>Straighten discreetly with clear aligners.</span></div>
+        <div><strong>Porcelain Veneers</strong><span>Reshape, brighten, and refine your smile.</span></div>
+        <div><strong>Professional Whitening</strong><span>Safe, take-home whitening from our office.</span></div>
+        <div><strong>Smile Makeovers</strong><span>A treatment plan built around your goals.</span></div>
       </div>
       <a href="#book" class="btn btn-primary btn-lg">Book a Cosmetic Consult</a>
     </div>
     <div class="cosmetic-media">
-      <img src="assets/cosmetic-smile.png" alt="A man with a confident, natural-looking smile" loading="lazy" width="900" height="1100" />
+      <img src="assets/smile-cosmetic.jpg" alt="A person with a confident, natural-looking smile" loading="lazy" width="600" height="400" />
     </div>
   </div>
 </section>
 
-<!-- ===================== COMFORT / WHY ===================== -->
+<!-- ===================== COMFORT / FAMILY EXPERIENCE ===================== -->
 <section class="section section-dark comfort" id="comfort">
   <div class="wrap comfort-inner">
     <div class="comfort-media">
-      <img src="assets/exam-room.jpg" alt="A comfortable treatment room at Smile Galleria" loading="lazy" width="1200" height="900" />
-      <img src="assets/kids-smile.png" class="comfort-kids" alt="A happy young patient" loading="lazy" width="300" height="200" />
+      <img src="assets/exam-room.jpg" alt="A comfortable dental treatment room at Smile Galleria" loading="lazy" width="850" height="550" />
+      <img src="assets/smile-family.jpg" class="comfort-kids" alt="A happy young patient smiling" loading="lazy" width="300" height="200" />
     </div>
     <div class="comfort-copy">
-      <p class="kicker light">The Smile Galleria Difference</p>
+      <p class="kicker light">A Visit Your Family Can Feel Good About</p>
       <h2 class="section-title">Relax — you're in good hands.</h2>
-      <p class="lead">Dr. Kim recognizes the immeasurable value of building trust and rapport with his patients. You'll always understand what's happening and why.</p>
+      <p class="lead">Dr. Kim recognizes the value of building trust and rapport with his patients. You'll always understand what's happening and why.</p>
       <ul class="comfort-points">
-        <li><strong>Patient education first</strong><span>We explain every option in plain language.</span></li>
-        <li><strong>Gentle, unhurried care</strong><span>No rushing — your comfort sets the pace.</span></li>
-        <li><strong>Great with kids</strong><span>Friendly visits that put families at ease.</span></li>
-        <li><strong>Honest guidance</strong><span>Only the treatment you actually need.</span></li>
+        <li><strong>Clear explanations</strong><span>Dr. Kim explains treatment as it happens.</span></li>
+        <li><strong>Patient, gentle care</strong><span>No rushing — your comfort sets the pace.</span></li>
+        <li><strong>Prevention first</strong><span>Education that supports long-term oral health.</span></li>
+        <li><strong>Treatment for every age</strong><span>Children, teens, adults, and seniors.</span></li>
       </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ===================== ORTHODONTICS / INVISALIGN ===================== -->
+<section class="section section-tint ortho" id="ortho">
+  <div class="wrap ortho-inner">
+    <div class="ortho-media">
+      <img src="assets/smile-ortho.jpg" alt="A young orthodontic patient smiling with braces" loading="lazy" width="600" height="400" />
+    </div>
+    <div class="ortho-copy">
+      <p class="kicker">Orthodontics &amp; Invisalign</p>
+      <h2 class="section-title">Straighter teeth. Healthier function. More confident smiles.</h2>
+      <p class="lead">Dr. Kim offers orthodontic options for teens and adults, with an approach based on your individual needs.</p>
+      <ul class="ortho-list">
+        <li><strong>Invisalign clear aligners</strong><span>Straighten discreetly, with removable aligners.</span></li>
+        <li><strong>Traditional braces</strong><span>Time-tested treatment for a range of cases.</span></li>
+        <li><strong>Ceramic braces</strong><span>A lower-profile look for adults and teens.</span></li>
+      </ul>
+      <div class="ortho-actions">
+        <a href="https://tysonssmilegalleria.com/orthodontics.html" target="_blank" rel="noopener" class="btn btn-outline">Explore Orthodontics</a>
+        <a href="#book" class="btn btn-primary">Ask About Invisalign</a>
+      </div>
     </div>
   </div>
 </section>
@@ -267,20 +342,25 @@
   <div class="wrap about-inner">
     <div class="about-portrait">
       <div class="portrait-photo">
-        <img src="assets/dr-kim.jpg" alt="Dr. Wilson J. Kim, DDS at Smile Galleria" width="600" height="574" loading="lazy" />
+        <img src="assets/dr-wilson-kim-portrait.jpg" alt="Dr. Wilson J. Kim, DDS, of Smile Galleria" width="188" height="179" loading="lazy" />
       </div>
       <div class="about-credentials">
-        <div><strong>DDS</strong><span>Columbia University, 2000</span></div>
-        <div><strong>B.A.</strong><span>Colgate University, 1993</span></div>
-        <div><strong>Captain</strong><span>U.S. Air Force</span></div>
+        <div><strong>Columbia</strong><span>University, DDS</span></div>
+        <div><strong>U.S. Air Force</strong><span>Dentist</span></div>
+        <div><strong>Since 2000</strong><span>Practicing dentistry</span></div>
+        <div><strong>English &amp; Korean</strong><span>Spoken</span></div>
       </div>
     </div>
     <div class="about-copy">
       <p class="kicker">Meet Your Dentist</p>
-      <h2 class="section-title">Dr. Wilson J. Kim, <span class="dds">DDS</span></h2>
-      <p class="lead">Dr. Kim has been practicing dentistry since graduating from the Columbia University School of Dental &amp; Oral Surgery in 2000. He earned his B.A. from Colgate University and served as a Captain in the U.S. Air Force before entering private practice in 2003, relocating to Virginia in 2006.</p>
-      <p>Fluent in both English and Korean and a father of three, Dr. Kim connects naturally with patients of every age. He believes the foundation of great dentistry is trust — taking the time to listen, educate, and make every visit comfortable.</p>
-      <a href="#book" class="btn btn-primary btn-lg">Schedule with Dr. Kim</a>
+      <h2 class="section-title">Meet Wilson J. Kim, <span class="dds">DDS</span></h2>
+      <p class="about-headline">Experience, patience and care for the whole family.</p>
+      <p class="lead">Dr. Kim has practiced dentistry since 2000. After graduating from the Columbia University School of Dental &amp; Oral Surgery — and earning his B.A. from Colgate University — he served as a dentist in the United States Air Force. He has practiced privately in Virginia since 2006.</p>
+      <p>Fluent in English and Korean and a father of three, Dr. Kim connects naturally with children and adults, building the trust and rapport that make comfortable care possible.</p>
+      <div class="about-actions">
+        <a href="https://tysonssmilegalleria.com/about.html" target="_blank" rel="noopener" class="btn btn-outline">Meet Dr. Kim</a>
+        <a href="#book" class="btn btn-primary">Schedule with Dr. Kim</a>
+      </div>
     </div>
   </div>
 </section>
@@ -291,50 +371,50 @@
     <div class="section-head center">
       <p class="kicker">Patient Reviews</p>
       <h2 class="section-title">Smiles worth talking about.</h2>
-      <div class="stars-lead" aria-label="Five star rated">★★★★★</div>
+      <p class="lead center">In their own words — patients on what it's like to be cared for by Dr. Kim.</p>
     </div>
     <div class="review-grid">
       <figure class="review-card">
-        <div class="stars" aria-hidden="true">★★★★★</div>
-        <blockquote>“I LOVE my new smile! I smile a lot more and love seeing my smile in pictures. Dr. Kim's dental work has made me very happy.”</blockquote>
-        <figcaption>— Kimberly B.</figcaption>
+        <span class="quote-mark" aria-hidden="true">“</span>
+        <blockquote>Dr. Kim is fantastic with my kids. He is friendly and patient, explaining what happens along the way, which puts the boys at ease during the entire appointment.</blockquote>
+        <figcaption>— Carrie, Owen, Pearson &amp; Colby</figcaption>
       </figure>
       <figure class="review-card">
-        <div class="stars" aria-hidden="true">★★★★★</div>
-        <blockquote>“I am very skittish when it comes to getting fillings. Dr. Kim was very patient and made me feel more relaxed. He is very professional but warm, friendly and soothing.”</blockquote>
+        <span class="quote-mark" aria-hidden="true">“</span>
+        <blockquote>I am very skittish when it comes to getting fillings. Dr. Kim was very patient and made me feel more relaxed. He is very professional but warm, friendly and soothing.</blockquote>
         <figcaption>— Rhonda F.</figcaption>
       </figure>
       <figure class="review-card">
-        <div class="stars" aria-hidden="true">★★★★★</div>
-        <blockquote>“Dr. Kim is fantastic with my kids. He is friendly and patient, explaining what happens along the way, which puts the boys at ease during the entire appointment.”</blockquote>
-        <figcaption>— Carrie &amp; family</figcaption>
+        <span class="quote-mark" aria-hidden="true">“</span>
+        <blockquote>I love my new smile. Dr. Kim is trustworthy, gentle and very talented. My whole family has had a great experience with him.</blockquote>
+        <figcaption>— Kimberly B.</figcaption>
       </figure>
       <figure class="review-card">
-        <div class="stars" aria-hidden="true">★★★★★</div>
-        <blockquote>“When it became clear that I would need to go through the dreaded implant process on one of my teeth, Dr. Kim couldn't have been more helpful and reassuring.”</blockquote>
+        <span class="quote-mark" aria-hidden="true">“</span>
+        <blockquote>Dr. Kim walked me through each step, provided high-quality referrals, and completed the work with the utmost care and attention to detail.</blockquote>
         <figcaption>— Pete L.</figcaption>
       </figure>
       <figure class="review-card">
-        <div class="stars" aria-hidden="true">★★★★★</div>
-        <blockquote>“I did not feel rushed at all during the treatment for my cracked tooth, and he answered all my questions!”</blockquote>
+        <span class="quote-mark" aria-hidden="true">“</span>
+        <blockquote>I did not feel rushed at all during the treatment for my cracked tooth, and he answered all my questions.</blockquote>
         <figcaption>— Stuart L.</figcaption>
       </figure>
       <figure class="review-card cta-card">
-        <p>Read more reviews from our patients.</p>
-        <a href="https://www.yelp.com/biz/smile-galleria-mclean" target="_blank" rel="noopener" class="btn btn-outline">See us on Yelp</a>
+        <p>Read more from Dr. Kim's patients.</p>
+        <a href="https://tysonssmilegalleria.com/testimonials.html" target="_blank" rel="noopener" class="btn btn-outline">Read Testimonials</a>
       </figure>
     </div>
   </div>
 </section>
 
-<!-- ===================== NEW PATIENTS / INSURANCE ===================== -->
+<!-- ===================== NEW PATIENTS ===================== -->
 <section class="section newpatient">
   <div class="wrap np-inner">
     <div class="np-copy">
-      <div class="np-photo"><img src="assets/welcome-smile.png" alt="A new patient smiling, welcomed at Smile Galleria" loading="lazy" /></div>
+      <div class="np-photo"><img src="assets/smile-welcome.jpg" alt="A new patient smiling, welcomed at Smile Galleria" loading="lazy" width="600" height="400" /></div>
       <p class="kicker">New Patients Welcome</p>
       <h2 class="section-title">Getting started is easy.</h2>
-      <p class="lead">Most insurances accepted, with Saturday and evening appointments available. Here's what to expect:</p>
+      <p class="lead">Most insurance plans accepted, with Saturday and evening appointments available. Here's what to expect:</p>
     </div>
     <ol class="np-steps">
       <li><span class="np-num">1</span><div><strong>Reach out</strong><p>Request an appointment online or call our team.</p></div></li>
@@ -349,19 +429,27 @@
   <div class="wrap book-inner">
     <div class="book-copy" id="contact">
       <p class="kicker light">Request an Appointment</p>
-      <h2 class="section-title">Let's get you smiling.</h2>
-      <p class="lead">Send us a note and our team will confirm your visit. Prefer to talk? Call <a href="tel:+17039927272">(703) 992-7272</a>.</p>
+      <h2 class="section-title">Ready to feel better about your dental care?</h2>
+      <p class="lead">Schedule a visit with Dr. Kim and discover personalized dental care for every member of your family. Prefer to talk? Call <a href="tel:+17039927272">(703) 992-7272</a>.</p>
       <dl class="contact-details">
         <div><dt>Address</dt><dd>8251 Greensboro Drive, Suite 120<br/>McLean, VA 22102</dd></div>
         <div><dt>Phone</dt><dd><a href="tel:+17039927272">(703) 992-7272</a></dd></div>
         <div><dt>Email</dt><dd><a href="mailto:DrKim@TysonsSmileGalleria.com">DrKim@TysonsSmileGalleria.com</a></dd></div>
-        <div><dt>Hours</dt><dd>Mon–Fri 9:00 am – 5:00 pm<br/>Saturday &amp; evening appointments available</dd></div>
+        <div><dt>Availability</dt><dd>Saturday &amp; evening appointments available.<br/>Call for current availability.</dd></div>
       </dl>
     </div>
 
-    <!-- Connect action to your provider (Formspree / practice CRM / etc.) -->
+    <!--
+      DEMO FORM — front-end concept only.
+      This form validates input in the browser and shows a demo confirmation; it does NOT send anything.
+      To go live, POST these fields to a secure booking provider (e.g. practice CRM, Formspree, or a
+      HIPAA-appropriate intake service). Do not collect SSN, insurance IDs, or medical history here.
+    -->
     <form class="book-form" id="bookForm" novalidate>
-      <h3 class="form-title">Book Your Visit</h3>
+      <div class="form-head">
+        <h3 class="form-title">Request Your Visit</h3>
+        <span class="form-demo-tag">Demo form</span>
+      </div>
       <div class="field">
         <label for="f-name">Full name</label>
         <input id="f-name" name="name" type="text" autocomplete="name" required />
@@ -378,25 +466,31 @@
       </div>
       <div class="two">
         <div class="field">
-          <label for="f-reason">Reason for visit</label>
-          <select id="f-reason" name="reason">
-            <option>New patient exam &amp; cleaning</option>
-            <option>Cosmetic consultation</option>
-            <option>Invisalign / orthodontics</option>
-            <option>Dental implant</option>
-            <option>Tooth pain / emergency</option>
-            <option>Other</option>
+          <label for="f-contact">Preferred contact</label>
+          <select id="f-contact" name="contact">
+            <option>Phone call</option>
+            <option>Text message</option>
+            <option>Email</option>
           </select>
         </div>
         <div class="field">
-          <label for="f-time">Preferred time</label>
-          <select id="f-time" name="time">
-            <option>Weekday morning</option>
-            <option>Weekday afternoon</option>
-            <option>Evening</option>
-            <option>Saturday</option>
+          <label for="f-patient">New or existing patient?</label>
+          <select id="f-patient" name="patient">
+            <option>New patient</option>
+            <option>Existing patient</option>
           </select>
         </div>
+      </div>
+      <div class="field">
+        <label for="f-reason">Reason for visit</label>
+        <select id="f-reason" name="reason">
+          <option>New patient exam &amp; cleaning</option>
+          <option>Cosmetic consultation</option>
+          <option>Invisalign / orthodontics</option>
+          <option>Dental implant</option>
+          <option>Tooth pain</option>
+          <option>Other</option>
+        </select>
       </div>
       <div class="field">
         <label for="f-msg">Anything we should know? <span class="optional">(optional)</span></label>
@@ -404,32 +498,37 @@
       </div>
       <button type="submit" class="btn btn-primary btn-block btn-lg">Request Appointment</button>
       <p class="form-note" id="formNote" role="status" aria-live="polite"></p>
-      <p class="form-fine">Most insurances accepted. We'll never share your information.</p>
+      <p class="form-fine">Most insurance plans accepted. We'll never share your information.</p>
     </form>
   </div>
 </section>
 
 <!-- ===================== OFFICE GALLERY ===================== -->
-<section class="section section-tint office" id="office">
+<section class="section office" id="office">
   <div class="wrap section-head center">
     <p class="kicker">Inside Smile Galleria</p>
-    <h2 class="section-title">A calm, modern space to smile.</h2>
-    <p class="lead center">From the welcoming front desk to comfortable treatment rooms and digital imaging — take a look around our Tysons Corner office.</p>
+    <h2 class="section-title">Take a look inside our office.</h2>
+    <p class="lead center">From the welcoming front desk to comfortable treatment rooms and digital imaging — a look around our Tysons Corner office.</p>
   </div>
   <div class="wrap office-grid">
-    <img src="assets/office-1.jpg" alt="The Smile Galleria reception desk" loading="lazy" />
-    <img src="assets/office-2.jpg" alt="Front office and check-in area" loading="lazy" />
-    <img src="assets/office-3.jpg" alt="Digital panoramic X-ray imaging" loading="lazy" />
-    <img src="assets/office-4.jpg" alt="The Smile Galleria interior sign" loading="lazy" />
+    <figure class="office-anchor"><img src="assets/reception.jpg" alt="The Smile Galleria reception and check-in area" loading="lazy" width="850" height="550" /></figure>
+    <figure><img src="assets/office-interior-sign.jpg" alt="The Smile Galleria interior office sign" loading="lazy" width="850" height="550" /></figure>
+    <figure><img src="assets/waiting-room-2.jpg" alt="The comfortable Smile Galleria waiting room" loading="lazy" width="850" height="550" /></figure>
+    <figure><img src="assets/panoramic-xray.jpg" alt="Digital panoramic X-ray imaging at Smile Galleria" loading="lazy" width="850" height="550" /></figure>
   </div>
 </section>
 
 <!-- ===================== LOCATION / MAP ===================== -->
-<section class="section location" id="location">
+<section class="section section-tint location" id="location">
   <div class="wrap location-head">
     <p class="kicker">Find Us</p>
     <h2 class="section-title">Conveniently located at Tysons Corner.</h2>
     <p class="lead">8251 Greensboro Drive, Suite 120, McLean, VA 22102 · minutes from Tysons, Vienna &amp; Falls Church.</p>
+    <div class="location-actions">
+      <a class="btn btn-primary" href="https://www.google.com/maps/dir/?api=1&destination=8251%20Greensboro%20Drive%2C%20Suite%20120%2C%20McLean%2C%20VA%2022102" target="_blank" rel="noopener">Get Directions</a>
+      <a class="btn btn-outline" href="tel:+17039927272">Call the Office</a>
+      <a class="btn btn-outline" href="mailto:DrKim@TysonsSmileGalleria.com">Email the Office</a>
+    </div>
   </div>
   <div class="map-wrap">
     <iframe
@@ -446,33 +545,51 @@
 <footer class="site-footer">
   <div class="wrap footer-inner">
     <div class="footer-brand">
-      <span class="footer-logo-chip"><img src="assets/logo.png" alt="Smile Galleria logo" width="184" height="149" /></span>
+      <span class="footer-logo-chip"><img src="assets/smile-galleria-logo.png" alt="Smile Galleria logo" width="184" height="149" /></span>
       <p class="footer-tag">Family &amp; Cosmetic Dentistry at Tysons Corner</p>
-      <div class="footer-social">
-        <a href="https://www.facebook.com/smilegalleria" target="_blank" rel="noopener">Facebook</a>
-        <a href="https://www.yelp.com/biz/smile-galleria-mclean" target="_blank" rel="noopener">Yelp</a>
-      </div>
+      <p class="footer-blurb">Personalized family, cosmetic and orthodontic dental care from Wilson J. Kim, DDS, in McLean, Virginia.</p>
+      <a href="#book" class="btn btn-primary">Request Appointment</a>
     </div>
     <nav class="footer-nav" aria-label="Footer">
-      <a href="#services">Services</a>
+      <h4>Care</h4>
+      <a href="#services">Preventive &amp; General</a>
       <a href="#cosmetic">Cosmetic Dentistry</a>
+      <a href="#ortho">Orthodontics &amp; Invisalign</a>
+      <a href="#comfort">Family &amp; Pediatric</a>
       <a href="#about">Meet Dr. Kim</a>
-      <a href="#reviews">Reviews</a>
-      <a href="#book">Book Appointment</a>
     </nav>
     <div class="footer-contact">
-      <p><strong>Visit</strong><br/>8251 Greensboro Drive, Suite 120<br/>McLean, VA 22102</p>
-      <p><strong>Call</strong><br/><a href="tel:+17039927272">(703) 992-7272</a></p>
-      <p><strong>Hours</strong><br/>Mon–Fri 9:00 am – 5:00 pm<br/>Saturday &amp; evening available</p>
+      <h4>Visit &amp; Contact</h4>
+      <p>8251 Greensboro Drive, Suite 120<br/>McLean, VA 22102</p>
+      <p><a href="tel:+17039927272">(703) 992-7272</a><br/><span class="muted">Fax (703) 992-7284</span></p>
+      <p><a href="mailto:DrKim@TysonsSmileGalleria.com">DrKim@TysonsSmileGalleria.com</a></p>
+      <p class="muted">Saturday &amp; evening appointments available. Call for current availability.</p>
     </div>
   </div>
   <div class="wrap footer-bottom">
     <p>&copy; <span id="year"></span> Smile Galleria · Wilson J. Kim, DDS. All rights reserved.</p>
-    <p>Most insurances accepted.</p>
+    <p class="concept-note" data-concept-note>Homepage redesign concept prepared for Smile Galleria.</p>
   </div>
 </footer>
 
-<a href="#book" class="sticky-cta">Book Appointment</a>
+<!-- ===================== MOBILE ACTION BAR ===================== -->
+<nav class="mobile-bar" aria-label="Quick actions">
+  <a href="tel:+17039927272" class="mobile-bar-item">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.5 15.5 0 006.6 6.6l2.2-2.2a1 1 0 011-.24 11.4 11.4 0 003.6.58 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1 11.4 11.4 0 00.58 3.6 1 1 0 01-.24 1l-2.24 2.2z"/></svg>
+    <span>Call</span>
+  </a>
+  <a href="https://www.google.com/maps/dir/?api=1&destination=8251%20Greensboro%20Drive%2C%20Suite%20120%2C%20McLean%2C%20VA%2022102" target="_blank" rel="noopener" class="mobile-bar-item">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2a7 7 0 00-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 00-7-7zm0 9.5A2.5 2.5 0 1112 6.5a2.5 2.5 0 010 5z"/></svg>
+    <span>Directions</span>
+  </a>
+  <a href="#book" class="mobile-bar-item mobile-bar-cta">
+    <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M7 2h10a1 1 0 011 1v18l-6-3-6 3V3a1 1 0 011-1zm2 5v2h6V7H9zm0 4v2h6v-2H9z"/></svg>
+    <span>Appointment</span>
+  </a>
+</nav>
+
+<!-- Concept badge — shown only when SHOW_CONCEPT_BADGE is true in script.js -->
+<span class="concept-badge" aria-hidden="true">Homepage Redesign Concept</span>
 
 <script src="script.js" defer></script>
 </body>

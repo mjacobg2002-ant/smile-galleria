@@ -1,49 +1,67 @@
-# Smile Galleria — Website
+# Smile Galleria — Homepage Redesign Concept
 
-A modern rebuild of the homepage for **Smile Galleria — Family & Cosmetic Dentistry at Tysons Corner**
+A modern, homepage-only redesign concept for **Smile Galleria — Family & Cosmetic Dentistry at Tysons Corner**
 (Dr. Wilson J. Kim, DDS · McLean, VA). Static site — plain HTML/CSS/JS, no build step. Deploys to Vercel as-is.
+
+> This is a sales-presentation concept, not a deployment to the practice's live domain.
 
 ## Files
 ```
 index.html      # Full responsive homepage
 styles.css      # Design system (teal + gold, Fraunces/Inter)
-script.js       # Nav, appointment form, scroll reveal
-assets/*.jpg    # Photography (professional stock — see note)
+script.js       # Nav drawer (focus trap/Esc/scroll-lock), demo form, mobile bar, scroll reveal
+assets/*        # First-party photography & logo (see manifest below)
 vercel.json     # Static hosting config
 ```
+
+## Run locally
+No build needed. From the repo root:
+```
+python3 -m http.server 8000
+```
+Then open http://localhost:8000. (Or just open `index.html` in a browser.)
 
 ## Deploy to Vercel
 1. Import this repo at https://vercel.com/new
 2. Framework preset: **Other** (no build command; output = repo root)
 3. Deploy.
 
-## Content — sourced from the practice's own site & listings
-All practice details were pulled from tysonssmilegalleria.com and public listings, and are used verbatim
-where possible:
-- **Practice:** Smile Galleria — Family & Cosmetic Dentistry at Tysons Corner
-- **Dentist:** Wilson J. Kim, DDS (Columbia University 2000; B.A. Colgate 1993; U.S. Air Force Captain; practicing since 2000; VA since 2006; English & Korean; father of three)
+## Design direction
+- **Gallery-inspired, editorial** feel that fits the "Smile Galleria" name — refined image framing,
+  generous whitespace, serif display type — without becoming a literal art-gallery theme.
+- Palette: soft teal (`--teal-700 #0e5563`) + warm gold accent (`--gold #c79a52`) on near-white.
+- Type: Fraunces (serif display), Inter (body). Responsive `clamp()` sizing throughout.
+- Voice: calm, trustworthy, comfort-first. Headline: "Confident smiles start with comfortable care."
+
+## Content integrity
+All copy uses only facts verifiable from tysonssmilegalleria.com:
+- **Dentist:** Wilson J. Kim, DDS — Columbia University DDS (2000), B.A. Colgate (1993),
+  U.S. Air Force dentist, practicing since 2000, private practice in Virginia since 2006,
+  English & Korean, father of three. *(No rank, awards, board certifications, or memberships are claimed.)*
 - **Address:** 8251 Greensboro Drive, Suite 120, McLean, VA 22102
-- **Phone:** (703) 992-7272 · **Email:** DrKim@TysonsSmileGalleria.com
-- **Hours:** Mon–Fri 9:00 am – 5:00 pm; Saturday & evening appointments available
-- **Services:** preventative, general/restorative, cosmetic (veneers, whitening), orthodontics (Invisalign/braces), pediatric, emergencies
-- **Reviews:** real, attributed patient quotes (Kimberly B., Rhonda F., Carrie & family, Pete L., Stuart L.)
-- **Social:** Facebook (/smilegalleria), Yelp (/biz/smile-galleria-mclean)
+- **Phone:** (703) 992-7272 · **Fax:** (703) 992-7284 · **Email:** DrKim@TysonsSmileGalleria.com
+- **Availability:** "Saturday & evening appointments available. Call for current availability."
+  *(No weekly schedule is invented — the live site does not publish one.)*
+- **Insurance:** "Most insurance plans accepted" (no insurers named).
+- **Reviews:** real, attributed patient quotes (Carrie & family, Rhonda F., Kimberly B., Pete L., Stuart L.).
+  *(No star ratings, review counts, dates, or platform badges are fabricated.)*
+- **Schema:** Dentist/LocalBusiness JSON-LD with only verified fields — no `openingHours`, no ratings.
 
 ## Photos — the practice's own images
-The site uses **Smile Galleria's real photography and logo**, sourced from tysonssmilegalleria.com:
-Dr. Kim's portrait, the real logo, the reception/waiting area, treatment room, digital X-ray, the
-interior sign, and the practice's smile imagery. A few originals are low-resolution (they came from the
-old site) — if you have higher-res versions, drop them in over the same filenames in `assets/` and no
-code changes are needed.
+Every image is first-party, downloaded from tysonssmilegalleria.com (nothing is hotlinked). See the
+**asset manifest** in `ASSETS.md` for source URLs, dimensions, and where each is used.
 
-## To finish before launch
-- **Appointment form** — `#bookForm` in `script.js` validates and confirms only; connect it to your
-  provider (Formspree / practice CRM / email) to receive submissions.
-- **Verify hours** — third-party listings show Mon–Fri 9–5; the site also advertises Saturday & evening
-  appointments. Confirm current hours.
-- **Higher-res photos** — optional, for the Dr. Kim portrait and office shots.
+The Dr. Kim portrait is only available at 188×179 on the source site, so it is shown at a controlled
+small size (framed, not upscaled to full-bleed). If a higher-resolution portrait is provided, drop it in
+over `assets/dr-wilson-kim-portrait.jpg`.
 
-## Brand
-- Palette: soft teal (`--teal-700 #0e5563`) + warm gold accent (`--gold #c79a52`) on near-white.
-- Type: Fraunces (serif display), Inter (body).
-- Voice: calm, trustworthy, comfort-first — "What does your smile say about you?"
+## Concept badge
+`script.js` has a `SHOW_CONCEPT_BADGE` flag (default `true`) that shows the floating
+"Homepage Redesign Concept" badge and the footer disclaimer. Set it to `false` before production.
+
+## To finish before launch (client confirmation)
+- **Appointment form** — `#bookForm` is a labeled **demo**: it validates and shows a demo message but
+  sends nothing. Connect it to a secure booking provider / CRM to receive submissions.
+- **Office hours** — confirm current weekly hours (intentionally omitted here).
+- **Social links** — none are included; add verified profile URLs if desired.
+- **Higher-res Dr. Kim portrait** — optional but recommended.
